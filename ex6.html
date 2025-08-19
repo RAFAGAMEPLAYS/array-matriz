@@ -1,0 +1,42 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: LOJA DE VEÍCULOS
+    Crie os seguintes arrays:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    
+    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    Apresente a lista final de cada tipo de veículo.
+    */
+
+    //ENTRADA
+     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+          let carro = prompt("Digite o nome do veículo ");
+        let tipo = prompt("Esse veículo é SUV, Sedan ou Hatch?").toLowerCase();
+
+
+
+
+    //PROCESSAMENTO
+      if (tipo === "suv") {
+            carrosSUV.push(carro);
+        } else if (tipo === "sedan") {
+            carrosSedan.push(carro);
+        } else if (tipo === "hatch") {
+            carrosHatch.push(carro);
+        } else {
+            alert("Tipo inválido! Esse veículo não foi adicionado.");
+        }
+
+
+    //SAÍDA
+     document.write("SUVs: " + carrosSUV.join(", ") + "<br>");
+    document.write("Sedans: " + carrosSedan.join(", ") + "<br>");
+    document.write("Hatchs: " + carrosHatch.join(", ") + "<br>");
+
+</script>
