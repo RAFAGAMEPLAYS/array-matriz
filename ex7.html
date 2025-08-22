@@ -13,6 +13,19 @@
     */
 
     //ENTRADA
+    
+        const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+        let corInformada = prompt("Digite uma cor (azul, amarelo, verde, branco, preto, marrom, cinza):").toLowerCase();
+        let numeroAleatorio = Math.floor(Math.random() * 7);
+        let numeroCor=nomeCores[numeroAleatorio];
+        if(corInformada===numeroCor){
+            document.write('parabens')
+        }else{
+            document.write('nao foi dessa vez');
+        }
+
+
+
 
 
     //PROCESSAMENTO
@@ -31,4 +44,5 @@
     Math.floor(Math.random() * 7);
     Entretanto, não faça uma cópia e cola apenas. Execute os comandos acima para compreender a lógica.
     */
+
 </script>
